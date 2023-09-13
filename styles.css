@@ -79,7 +79,7 @@ li{
 
 #header{
     display:grid;
-    grid-template: 1fr 1fr / 3fr 2fr;
+    grid-template: 1fr 1fr / 50% 50%;
 }
 
 #header svg{
@@ -101,8 +101,9 @@ li{
     background-color: var(--theme-secondary);
     border:none;
     border-radius: 20px;
-    padding: 10px 30px;
-    font-size: 20px;
+    padding: 10px 5px;
+    font-size: 15px;
+    width: 100px;
 }
 img{
     border-radius: 50%;
@@ -119,11 +120,27 @@ img.large{
     display:grid;
     grid-template-columns: 100px 250px;
     padding-bottom: 10px;
+    align-items: center;
 }
 .intro,.searchbar{
     padding-left: 20px;
 }
 
+.share {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
 .searchbar{
     padding-top: 15px;
+}
+
+.profile{
+    width: 250px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: left;
 }
