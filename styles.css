@@ -182,7 +182,9 @@ img.large{
 .announcements {
     grid-area: announcements;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1px 1fr 1px 1fr;
+    row-gap: 15px;
+    align-items: end;
 }
 
 .announcement-title{
@@ -196,4 +198,25 @@ img.large{
     grid-area: trending;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.other-profile{
+    display:flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.break{
+    border-bottom: 1px solid black;
+}
+.card-icons{
+    justify-self: right;
+}
+
+.card-icons svg{
+    height:30px;
+    width: 30x;
+}
+.project {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
 }
