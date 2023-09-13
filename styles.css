@@ -144,3 +144,51 @@ img.large{
     justify-content: space-between;
     justify-self: left;
 }
+
+#content{
+    display: grid;
+    grid-template: 20px 1fr 20px 1fr / 3fr 1fr;
+    grid-template-areas: 
+    "project-title announcement-title"
+    "projects announcements"
+    "projects trending-title"
+    "projects trending"
+    ;
+    gap: 30px;
+    padding: 30px;
+}
+.card {
+    background-color: var(--theme-primary);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #aaafb5;
+}
+
+.project.card {
+    border-left: 10px solid blue;
+}
+
+.project-title{
+    grid-area: project-title;
+}
+
+.projects{
+    grid-area: projects;
+    display:grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap:30px;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.announcement-title{
+    grid-area: announcement-title;
+}
+
+.trending-title{
+    grid-area: trending-title;
+}
+.trending{
+    grid-area: trending;
+}
