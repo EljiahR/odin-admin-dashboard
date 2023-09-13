@@ -161,6 +161,7 @@ img.large{
     background-color: var(--theme-primary);
     border-radius: 10px;
     box-shadow: 5px 5px 5px #aaafb5;
+    padding: 25px;
 }
 
 .project.card {
@@ -174,12 +175,14 @@ img.large{
 .projects{
     grid-area: projects;
     display:grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-template: 240px 240px 240px / 400px 400px;
     gap:30px;
 }
 
 .announcements {
     grid-area: announcements;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .announcement-title{
@@ -191,4 +194,6 @@ img.large{
 }
 .trending{
     grid-area: trending;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
